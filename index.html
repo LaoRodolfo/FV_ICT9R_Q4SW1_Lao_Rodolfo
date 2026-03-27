@@ -129,9 +129,13 @@
     function login() {
         let user = document.getElementById("username").value;
         let pass = document.getElementById("password").value;
-        if (user === "Rodolfo" && pass === "Lao") { window.alert("Access granted"); }
-        else if (user === "" || pass === "") { window.alert("Please fill in all fields"); }
-        else { window.alert("Access denied"); }
+        if (user === "Rodolfo" && pass === "Lao") {
+            window.alert(`Welcome to the website, ${user}!`);
+        } else if (user === "" || pass === "") {
+            window.alert("Please fill in all fields");
+        } else {
+            window.alert("Access denied");
+        }
     }
 
     function clearFields() {
@@ -142,10 +146,12 @@
 
     function toggleInfo() {
         let info = document.getElementById("info");
-        if (info.style.display === "none") { info.style.display = "block"; }
-        else { info.style.display = "none"; }
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
     }
-
 
     function function_name_here() {
         let variable_name = document.getElementById("checkboxID").checked;
